@@ -25,7 +25,7 @@ let step = []; // Size of each step along the path
 let pct = []; // Percentage traveled (0.0 to 1.0)
 
 // N. Oggetti
-let n_obj = 5; 
+let n_obj = 9; 
 
 // grandezza videos
 let videos_width = 70;
