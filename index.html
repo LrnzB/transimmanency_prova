@@ -5,8 +5,8 @@
 	<title>Blank Index.html File</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="external_lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="external_lib/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="style/style.css" type="text/css">
 	<div class="container-fluid">
 
@@ -18,19 +18,20 @@
 	<a id="downloadLink" href="#" download hidden>Scarica video</a>
 	<button id="opacity" onclick="downloadVideo()" hidden>Scarica il video</button>
 
+	<div id="rect" class="black-div"></div>
+
+	  
 	<div id= "container_btn_txt" class="container">
 		<p class="centered-text">TRANSIMMANENCY</p>
 		<button id='myButton' type="button" class="btn btn-primary text-primary">Participate</button>
-		<p id="final_text" class="fin_text text-primary" hidden style="opacity: 0;">TRANSIMMANENCY</p>
+		<p id="final_text" class="fin_text text-primary centered-text" hidden style="opacity: 0;">TRANSIMMANENCY</p>
 	</div>
 
 	<p id="final_text" class="fin_text text-primary" hidden style="opacity: 0;">TRANSIMMANENCY</p>
 
-	
-
 	<video id="video_back" playsinline hidden src="cont_back/vid_back.mp4"></video>
-	
 
+	
 </body>
 <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
 
