@@ -25,7 +25,7 @@ let step = []; // Size of each step along the path
 let pct = []; // Percentage traveled (0.0 to 1.0)
 
 // N. Oggetti
-let n_obj = 9; 
+let n_obj = 5; 
 
 // grandezza videos
 let videos_width = 70;
@@ -152,6 +152,17 @@ div_videos.style.opacity = "0";
 document.body.appendChild(div_videos);
 crVideo_3(0) //lo 0 mi serve per inizializzare variabile iterazione per loop (espediente per creare loop con timeout specifico, al posto di for)
 
+var video_back = document.createElement('video');
+/*
+    // Impostazione degli attributi
+    video_back.setAttribute('id', 'video_back');
+    video_back.setAttribute('src', 'cont_back/vid_back_2.mp4');
+    video_back.setAttribute('hidden', 'true');
+    video_back.setAttribute('playsinline', 'true');
+
+    // Aggiunta dell'elemento video al DOM
+    document.body.appendChild(video_back);
+*/
 /*
   button = createButton('Book');
   button.id('button');
@@ -168,13 +179,13 @@ crVideo_3(0) //lo 0 mi serve per inizializzare variabile iterazione per loop (es
     //myButton.remove();
     container_btn_txt.remove();
     window.addEventListener('resize', handleResize);
+
+
     //myButton.style.opacity = 0;
    // myButton.style.transition = "opacity 2.5s ease";
        // Per IOS dovrei darlo solo dopo un gesto dell'user...mettere dopo click Partecipa
     playVideo();
   });
-
-
 
 
   //button.mousePressed(playVideo);
@@ -203,6 +214,8 @@ videlem.className = "myVid";
 
 // Listener per pressione bottone
   let currentDiv_2 = document.getElementById("myVideo");
+
+  
   currentDiv_2.addEventListener('ended', function() {
   console.log('Riproduzione del video terminata');
 
@@ -211,8 +224,10 @@ videlem.className = "myVid";
   setTimeout(function() {
     changeBG()
     play_videos()
+
     var video_back = document.getElementById("video_back");
     video_back.play();
+
     gen_points()
   }, 1800);
 
